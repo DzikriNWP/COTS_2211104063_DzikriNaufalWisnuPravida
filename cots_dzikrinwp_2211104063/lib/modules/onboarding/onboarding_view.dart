@@ -135,7 +135,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      // onpressed untuk langsung masuk ke dalam main
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/main');
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: ColorsItems.greengojek,
                         padding: const EdgeInsets.symmetric(vertical: 16),
